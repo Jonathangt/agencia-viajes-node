@@ -1,0 +1,34 @@
+extends ./layout/index
+block slider
+    div(class="slider")
+        h1 Rio de Janeiro
+        em aventura
+
+block contenido
+    main(class="container mt-5")
+        h2(class="text-center mb-5") Sobre Nosotros
+        div(class="row mb-5")
+            div(class="col-md-6")
+                p Vestibulum porta nec nibh eu aliquet. Vestibulum pharetra eros dui, non varius tortor blandit id. Morbi id imperdiet nulla, eget mattis augue. Curabitur volutpat enim et ornare cursus. Nam quis purus consectetur dui semper rhoncus a vitae diam. Nam sed justo dui. 
+
+                p Nullam vitae ullamcorper turpis, nec dapibus lorem. Vivamus cursus quam libero, at posuere risus egestas quis. Proin at iaculis enim.
+            div(class="col-md-6")
+                img(src="/img/inicio_nosotros.jpg", class="img-fluid")
+
+        div(class="container")
+            include ./layout/viajes
+
+    div(class="descuento")
+        div(class="container")
+        div(class="row")
+            div(class="col-md-6")
+            div(class="contenido")
+                h3 5% de Descuento
+                p(class="titulo") Viaje a Canada
+                p(class="fecha") #{dia20DiasDespues} de  #{mes20DiasDespues}  #{anio20DiasDespues} - #{diaActual} De #{mesActual} #{anioActual}
+                p(class="precio") $2,500 USD
+
+    div(class="container")
+            h2(class="mt-5 text-center") Testimoniales
+            div(class="row")
+            include ./layout/testimoniales

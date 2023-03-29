@@ -1,0 +1,13 @@
+div(class="col-md-12")
+    h1(class="text-center") #{page}
+    blockquote(class="text-center") Lee sobre nuestros Clientes y sus experiencias
+    div(class="row testimoniales")
+      each testimonial in testimoniales
+        div(class="col-md-6 col-lg-4 mb-4")
+            div(class="card")
+                div(class="card-body")
+                    blockquote(class="blockquote")
+                    p(class="mb-0")
+                        | #{testimonial.mensaje}
+                    footer(class="blockquote-footer")
+                        | #{testimonial.nombre}
